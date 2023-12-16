@@ -3,6 +3,15 @@
 */
 
 function wait(n) {
+
+    // returns a promose ==> to resolve
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(`Promise resolved after ${n} seconds`);
+        }, n * 1000); // Convert seconds to milliseconds
+    });
+
+
 }
 
 module.exports = wait;
