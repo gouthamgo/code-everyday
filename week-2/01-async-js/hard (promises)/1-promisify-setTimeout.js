@@ -8,7 +8,7 @@ function wait(n) {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(`Promise resolved after ${n} seconds`);
-        }, n * 1000); // Convert seconds to milliseconds
+        }, n * 1000); 
     });
 
 
